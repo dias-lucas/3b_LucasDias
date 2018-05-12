@@ -7,21 +7,30 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-
-<AnchorPane id="AnchorPane" prefHeight="278.0" prefWidth="487.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8" fx:controller="br.edu.ifro.PrincipalController">
+<AnchorPane id="AnchorPane" prefHeight="278.0" prefWidth="487.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.edu.ifro.PrincipalController">
    <children>
       <Pane layoutX="-6.0" prefHeight="310.0" prefWidth="489.0">
          <children>
-            <JFXTextField fx:id="txtNum2" layoutX="257.0" layoutY="243.0" prefHeight="25.0" prefWidth="200.0" />
-            <JFXTextField fx:id="txtResultado" layoutX="45.0" layoutY="38.0" prefHeight="25.0" prefWidth="391.0" />
-            <JFXTextField fx:id="txtNum1" layoutX="257.0" layoutY="174.0" prefHeight="25.0" prefWidth="200.0" />
-            <JFXButton fx:id="btnDivisao" layoutX="45.0" layoutY="148.0" onAction="#dividir" prefHeight="39.0" prefWidth="156.0" text="DIVIDIR" />
-            <JFXButton fx:id="btnSoma" layoutX="45.0" layoutY="249.0" onAction="#somar" prefHeight="39.0" prefWidth="156.0" text="SOMAR" />
-            <JFXButton fx:id="btnSubtraçao" layoutX="45.0" layoutY="204.0" onAction="#subtrair" prefHeight="39.0" prefWidth="156.0" text="SUBTRAIR" />
-            <JFXButton fx:id="btnMultiplicaçao" layoutX="45.0" layoutY="101.0" onAction="#multiplicar" prefHeight="39.0" prefWidth="156.0" text="MULTIPLICAR" />
-            <Label layoutX="45.0" layoutY="30.0" text="Resultado" />
-            <Label layoutX="257.0" layoutY="159.0" text="Número 1" />
-            <Label layoutX="257.0" layoutY="235.0" text="Numero 2" />
+            <JFXTextField fx:id="txtNum2" layoutX="36.0" layoutY="251.0" prefHeight="25.0" prefWidth="200.0" />
+            <JFXTextField fx:id="txtResultado" layoutX="36.0" layoutY="74.0" prefHeight="25.0" prefWidth="391.0" />
+            <JFXTextField fx:id="txtNum1" layoutX="36.0" layoutY="160.0" prefHeight="25.0" prefWidth="200.0" />
+            <JFXButton fx:id="btnDivisao" layoutX="302.0" layoutY="153.0" onAction="#dividir" prefHeight="39.0" prefWidth="156.0" text="DIVIDIR" />
+            <JFXButton fx:id="btnSoma" layoutX="304.0" layoutY="257.0" onAction="#somar" prefHeight="39.0" prefWidth="156.0" text="SOMAR" />
+            <JFXButton fx:id="btnSubtraçao" layoutX="305.0" layoutY="205.0" onAction="#subtrair" prefHeight="39.0" prefWidth="156.0" text="SUBTRAIR" />
+            <JFXButton fx:id="btnMultiplicaçao" layoutX="303.0" layoutY="110.0" onAction="#multiplicar" prefHeight="39.0" prefWidth="156.0" text="MULTIPLICAR" />
+            <Label layoutX="36.0" layoutY="57.0" text="Resultado" />
+            <Label layoutX="35.0" layoutY="140.0" text="Número 1" />
+            <Label layoutX="35.0" layoutY="235.0" text="Numero 2" />
+            <MenuBar layoutX="8.0" layoutY="8.0" prefHeight="25.0" prefWidth="478.0">
+              <menus>
+                <Menu mnemonicParsing="false" text="Cadastros">
+                  <items>
+                    <MenuItem mnemonicParsing="false" onAction="#abrirCadastros" text="Alunos" />
+                        <MenuItem mnemonicParsing="false" onAction="#fecharProjeto" text="Fechar" />
+                  </items>
+                </Menu>
+              </menus>
+            </MenuBar>
          </children>
       </Pane>
    </children>
